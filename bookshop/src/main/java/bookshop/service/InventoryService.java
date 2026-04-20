@@ -33,7 +33,7 @@ public class InventoryService {
     }
 
     /** Get total stock count across all books. */
-    public int getStockCount() throws IOException {
+    public int getTotalStockCount() throws IOException {
         int total = 0;
         for (String line : CsvUtil.readLines(csvPath)) {
             Book b = Book.fromCsvRow(line);

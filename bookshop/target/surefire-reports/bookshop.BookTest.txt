@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: bookshop.BookTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in bookshop.BookTest
+bookshop.BookTest.testBookAddToStock -- Time elapsed: 0.021 s <<< ERROR!
+java.lang.IllegalArgumentException: Barcode already exists: JAV001
+	at bookshop.service.InventoryService.addBook(InventoryService.java:72)
+	at bookshop.BookTest.testBookAddToStock(BookTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
